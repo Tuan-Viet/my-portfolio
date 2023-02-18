@@ -252,7 +252,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../public/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -339,6 +339,7 @@ textarea {
 .home-hero__info {
   margin: 3rem auto 0 auto;
   max-width: 80rem;
+  color: #ffffff !important;
 }
 
 .home-hero__cta {
@@ -471,6 +472,7 @@ textarea {
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
+  /* margin-bottom: -20px; */
 }
 
 .contact__form-container {
@@ -796,6 +798,7 @@ textarea {
   letter-spacing: 1px;
   font-weight: 700;
   transition: color .3s;
+  text-decoration: none;
 }
 
 .header__link:hover {
@@ -952,6 +955,7 @@ textarea {
   font-size: 1.2rem;
   text-align: left;
   text-align: center;
+  margin-bottom: -20px;
 }
 
 .main-footer__lower a {
@@ -1018,4 +1022,30 @@ textarea {
     opacity: 0;
     top: 27px;
   }
+}
+
+/* admin */
+.main-admin {
+  width: 100%;
+}
+
+.main-admin-content {
+  /* width: 980px; */
+  margin: 0 auto;
+  padding: 0 100px;
+  font-size: 14px;
+}
+
+.td__ {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box {
+  display: flex;
+  /* width: 100%; */
+  margin: 10px 0;
+  /* margin-left: 20px; */
 }
