@@ -1,11 +1,18 @@
 import nav from "../components/nav";
 import footer from "../components/footer";
 import { projects } from "../data";
+import { useEffect, useState } from "../lib";
 const Projectdetail = ({ id }) => {
-  const project = projects.find((project) => project.id === +id);
-  if (!project) return null;
+  const [project, setProject] = useState({});
+  useEffect(() => {
+    fetch(`http://localhost:3000/projects/${id}`)
+      .then((response) => response.json())
+      .then((data) => setProject(data))
+  }, []);
+
   return `
     ${nav()}
+    
     <section class="project-cs-hero">
     <div class="project-cs-hero__content">
       <h1 class="heading-primary">${project.name}</h1>
@@ -17,7 +24,7 @@ const Projectdetail = ({ id }) => {
         </p>
       </div>
       <div class="project-cs-hero__cta">
-        <a href="${project.link}" class="btn btn--bg" target="_blank">PROJECT LINK</a>
+        <a href="${project.link}" class="btn btn--bg btn btn--med btn--theme dynamicBgClr" target="_blank">PROJECT LINK</a>
       </div>
     </div>
   </section>
@@ -26,7 +33,7 @@ const Projectdetail = ({ id }) => {
       <div class="project-details__content">
         <div class="project-details__showcase-img-cont">
           <img
-            src="./public/jpeg/${project.img}"
+            src="${project.img}"
             alt="Project Image"
             class="project-details__showcase-img"
           />
@@ -42,8 +49,12 @@ const Projectdetail = ({ id }) => {
           <div class="project-details__tools-used">
             <h3 class="project-details__content-title">Tools Used</h3>
             <div class="skills">
-              <div class="skills__skill">${project.tools}</div>
-              
+            ${project.tools ? project.tools.map((tool) => {
+    return `
+                <div class="skills__skill">${tool}</div>
+              `
+  }).join('') : ''}
+                    
             </div>
           </div>
           <div class="project-details__links">

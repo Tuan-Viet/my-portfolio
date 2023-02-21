@@ -6,23 +6,23 @@ const nav = () => {
         <div class="header__logo-img-cont">
           <img src="./public/png/avatar.jpg" alt="Avatar" class="header__logo-img" />
         </div>
-        <span class="header__logo-sub">Tuan Viet</span>
+        <span class="header__logo-sub"><a href="/">Tuan Viet</a></span>
       </div>
       <div class="header__main">
         <ul class="header__links">
           <li class="header__link-wrapper">
-            <a href="/" class="header__link"> Home </a>
+            <a href="#home" class="header__link"> Home </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#about" class="header__link">About </a>
+            <a href="#about" class="header__link">About </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#projects" class="header__link">
+            <a href="#projects" class="header__link">
               Projects
             </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#contact" class="header__link"> Contact </a>
+            <a href="#contact" class="header__link"> Contact </a>
           </li>
         </ul>
         <div class="header__main-ham-menu-cont">

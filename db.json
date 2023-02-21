@@ -1,19 +1,70 @@
 {
-  "posts": [
+  "projects": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Wilsonport",
+      "date": "2022-02-11",
+      "projectURL": "https://github.com/Tuan-Viet",
+      "desc": "Wilsonport is a multiservice logistics and transport company and I created their multi-page website using my Frontend Web Development skills to build their online presence and make them stand out among their competitors and provide a better user experience for all types of devices.\n\nI took User Interface ideas by visiting different types of websites of the same industry and even visited platforms like dribbble to get inspiration for building a good User Interface.\n\nFeel free to check out the Project by visiting the Live Link.",
+      "link": "https://wilsonport-web.netlify.app/",
+      "img": [
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992352/my-portfolio/icqya8phz5qinbtwskkh.jpg"
+      ],
+      "list_img": [
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992858/my-portfolio/kmlcea9bq4frcv4mwexh.png",
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992859/my-portfolio/tkdkgip9afbztrrjlxid.jpg",
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992861/my-portfolio/dytqjd5lgss5tflmrzbf.jpg",
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992862/my-portfolio/lucacjnz5rjebsqthkmy.jpg"
+      ],
+      "tools": [
+        "HTML",
+        "css",
+        "js"
+      ],
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Crown Template",
+      "date": "2022-02-01",
+      "projectURL": "https://github.com/Tuan-Viet",
+      "desc": "Crown is a web template that I created targeting the restaurant and food industry for people to use for their own restaurant business and build trust and engagement with their customers by providing them with a better User Interface on the Web.\n\nBy taking User Interface ideas by visiting different types of websites of the same industry and even visited platforms like dribble to get inspiration for building a good User Interface that will bring great results.\n\nFeel free to check out the Project by visiting the Live Link.",
+      "link": "https://fc-rest.netlify.app/",
+      "img": [
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992765/my-portfolio/nikyv9k7nn8hscn4htwy.jpg"
+      ],
+      "list_img": [
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992952/my-portfolio/zzxvwufw4wty95ut0xoj.jpg",
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992954/my-portfolio/trrpugssq3bxcgtvljxa.jpg",
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992954/my-portfolio/cfsllugkla4cn9f4cqdw.jpg",
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676992956/my-portfolio/vmrenrkzpgq9wfdzilms.jpg"
+      ],
+      "tools": [
+        "React",
+        " javascript"
+      ],
+      "id": 3
+    },
+    {
+      "name": "Boreal Coffee Clone",
+      "date": "2022-01-01",
+      "projectURL": "https://github.com/Tuan-Viet",
+      "desc": "I decided to recreate the Frontend of Boreal Coffee's official Web App as I got attracted to their beautiful UI and it was a great opportunity for me to showcase my frontend skills by rebuilding the UI and it ended up being a great experience for me.\n\nI used my frontend tools to build the User Interface which works on all types of devices along with the SPA library to make the frontend perform faster.\n\nFeel free to check out the Project by visiting the Live Link.",
+      "link": "https://bc-clone.netlify.app/",
+      "img": [
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676993660/my-portfolio/ptfctoshih067qfiqiz2.jpg"
+      ],
+      "list_img": [
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676993655/my-portfolio/irt2wwwypxk1g9uocgis.png",
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676993657/my-portfolio/vdszw0k1v4w3u7zzggo8.jpg",
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676993658/my-portfolio/ihblfaehwwmfuh8azfxi.jpg",
+        "https://res.cloudinary.com/db7hclqfc/image/upload/v1676993659/my-portfolio/zzbgfdjtumsvteh4tceq.jpg"
+      ],
+      "tools": [
+        "html",
+        " css",
+        " javascript",
+        " react"
+      ],
+      "id": 4
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

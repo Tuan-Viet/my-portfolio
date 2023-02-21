@@ -25,7 +25,7 @@ const Contact = () => {
                 <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
                 name="message" id="message"></textarea>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">
+            <button type="submit" class="btn btn--theme contact__btn btn btn--med btn--theme dynamicBgClr">
                 Submit
             </button>
             </form>

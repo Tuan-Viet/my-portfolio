@@ -2,7 +2,7 @@ import nav from "./nav";
 const header = () => {
   return `
   ${nav()}
-    <section class="home-hero">
+    <section class="home-hero" id="home">
     <div class="home-hero__content">
       <h1 class="heading-primary">Hey, My name is Tuan Viet</h1>
       <div class="home-hero__info">
@@ -11,7 +11,7 @@ const header = () => {
         </p>
       </div>
       <div class="home-hero__cta">
-        <a href="./#projects" class="btn btn--bg">Projects</a>
+        <a href="./#projects" class="btn btn--bg btn btn--med btn--theme dynamicBgClr">Projects</a>
       </div>
     </div>
     <div class="home-hero__socials">

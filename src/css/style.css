@@ -233,8 +233,8 @@ textarea {
 }
 
 .text-primary {
-  color: #fff;
-  font-size: 2.2rem;
+  color: #fff !important;
+  font-size: 2.2rem !important;
   text-align: center;
   width: 100%;
   line-height: 1.6;
@@ -445,7 +445,7 @@ textarea {
 .projects__row-content-title {
   font-weight: 700;
   font-size: 2.8rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -705,6 +705,7 @@ textarea {
 
 .project-details__links-btn:last-child {
   margin: 0;
+  border: 1px solid;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -772,11 +773,17 @@ textarea {
   display: block;
 }
 
-.header__logo-sub {
+.header__logo-sub a {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.header__logo-sub a:hover {
+  text-decoration: none;
 }
 
 .header__links {
@@ -973,13 +980,14 @@ textarea {
 .skills {
   display: flex;
   flex-wrap: wrap;
+  text-transform: uppercase;
 }
 
 .skills__skill {
   padding: 1rem 2rem;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
   font-weight: 600;
@@ -1037,10 +1045,17 @@ textarea {
 }
 
 .td__ {
-  max-width: 200px;
+  margin: 0 !important;
+  max-width: 250px;
+
+}
+
+.td__ span {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .box {
@@ -1048,4 +1063,157 @@ textarea {
   /* width: 100%; */
   margin: 10px 0;
   /* margin-left: 20px; */
+}
+
+body {
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: 100% 100%
+}
+
+.card {
+  width: 980px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: none !important;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  background-color: #faf9f9 !important;
+
+}
+
+.blue-text {
+  color: #00BCD4
+}
+
+.form-control-label {
+  margin-bottom: 0
+}
+
+input,
+textarea,
+.btn-submit {
+  padding: 8px 10px;
+  border-radius: 5px !important;
+  margin: 5px 0px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 14px !important;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+input:focus,
+textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #00BCD4;
+  outline-width: 0;
+  font-weight: 400
+}
+
+.btn-block {
+  text-transform: uppercase;
+  font-size: 15px !important;
+  font-weight: 400;
+  height: 43px;
+  cursor: pointer
+}
+
+.btn-block:hover {
+  color: #fff !important
+}
+
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0
+}
+
+button a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+table {
+  margin: 20px 0;
+}
+
+.projects__row-content-desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+#list-projects img {
+  max-width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+td,
+th {
+  vertical-align: middle !important;
+}
+
+.btn i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.btn-primary i {
+  color: blue;
+}
+
+.btn-danger i {
+  color: red;
+}
+
+.btn--theme {
+  background: #facf0f !important;
+  color: #111 !important;
+}
+
+.btn--med {
+  padding: 15px 50px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+p.text-primary {
+  color: white !important;
+  /* font-size: 35px !important; */
+  font-weight: 600;
+}
+
+.project_date {
+  font-size: 14px;
+  font-style: italic;
+  color: #c6c4c4;
+}
+
+.project-details__desc-para {
+  white-space: pre-wrap;
+  text-indent: -20px;
+}
+
+
+section#contact {
+  margin-bottom: -15px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.form-group img {
+  margin: 5px 0;
 }
